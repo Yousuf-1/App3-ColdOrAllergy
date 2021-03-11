@@ -42,7 +42,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert(allergy_count);
 
         }
 
@@ -51,6 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	var resultText = document.getElementById("results");
+	<p resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p> <!--results output-->
 	
   </script>
 
@@ -178,8 +178,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!--start of results page content-->
 	
 	<div id="content" class="w3-container"> <!--results page content below-->
-	<a href="#one" class="w3-btn w3-black"> results> </a> <!--results button-->
-		 <p resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p> <!--results output-->
+		 <p id="results"></p> <!--results paragraph-->
+		
+	<a href="#one" class="w3-btn w3-black"> Results </a> <!--results button-->
 		
 	
 	</div>
