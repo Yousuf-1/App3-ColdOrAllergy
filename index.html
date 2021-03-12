@@ -51,7 +51,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 	
-	function results(){
+	function resultscalculator(){
 	var resultText = document.getElementById("results");
 	allergyPercent = allergy_count / 6 * 100;
 	coldPercent = cold_count / 6 * 100;
@@ -172,12 +172,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!--page six content start-->
 		<p>Are your symptoms gradual?</p> <!--page six question-->
 		
-	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--yes button-->
-	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--no button-->
+	<a href="#resultspage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--yes button-->
+	<a href="#resultspage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--no button-->
 	
 	</div>
 </div> <!--start of results page-->
-<div class="page" id="results"> 
+<div class="page" id="resultspage"> 
 	<div class="w3-container w3-flat-carrot"> <!--results page-->
 		<h1>Results</h1> <!--results page header-->
 
@@ -186,7 +186,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!--results page content below-->
 		 <p id="results"></p> <!--results paragraph-->
 		
-	<a href = "#results" onclick="results();" class="w3-btn w3-black"> Results</a> <!--results button-->
+	<a href = "#resultspage" onclick="resultscalculator();" class="w3-btn w3-black"> Results</a> <!--results button-->
 		
 	
 	</div>
